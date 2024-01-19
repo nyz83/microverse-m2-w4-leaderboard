@@ -28,7 +28,7 @@ Welcome to the leaderboard website! Here, users can  submit their scores and che
 
 ## Live Demo
 
-[Live Demo](#) (To Be Updated)
+[Live Demo](https://nyz83.github.io/microverse-m2-w4-leaderboard/) (To Be Updated)
 
 ## License <a name="license"></a>
 
