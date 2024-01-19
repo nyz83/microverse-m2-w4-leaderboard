@@ -11,7 +11,64 @@
       content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
   </head>
-  <body>
+  <body class="font-mono">
+    <main>
+      <article class="mx-auto mt-10 max-w-3xl">
+        <h1 class="mb-8 text-center text-3xl">LeaderBoard</h1>
+        <div
+          class="flex flex-col justify-around gap-3 px-4 md:flex-row md:gap-0">
+          <section class="order-last flex-1 md:order-none">
+            <div class="mx-auto w-5/6">
+              <div class="mb-5 flex items-center justify-between">
+                <h2 class="text-center text-2xl text-gray-900">
+                  Recent Scores
+                </h2>
+                <button
+                  id="refresh"
+                  type="button"
+                  class="border-2 border-gray-800 px-3 py-1 shadow-default">
+                  Refresh
+                </button>
+              </div>
+              <ul
+                id="list"
+                class="mx-auto border-2 border-gray-950"></ul>
+            </div>
+          </section>
+          <section class="flex-1">
+            <div class="mx-auto w-4/5">
+              <h2 class="mb-5 text-center text-2xl text-gray-900">
+                Add Your Score
+              </h2>
+              <form
+                id="form"
+                action=""
+                class="mx-auto flex flex-col gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  id="user"
+                  placeholder="Enter Your Name"
+                  class="p-2"
+                  required />
+                <input
+                  type="text"
+                  name="score"
+                  id="score"
+                  placeholder="Enter Your Score"
+                  class="p-2"
+                  required />
+                <button
+                  type="submit"
+                  class="ml-auto border-2 border-gray-800 px-2 py-1 shadow-default">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
     <script
       type="module"
       src="/src/index.ts"></script>
